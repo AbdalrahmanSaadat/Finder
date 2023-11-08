@@ -1,19 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #work on counting function
 #file input
 fhand = (open("test.txt"))
