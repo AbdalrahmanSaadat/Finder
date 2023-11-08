@@ -1,24 +1,21 @@
-#basic guidelines for using
+#--------------------------------------------------------basic guidelines for using-------------------------------------
 print("!!!_____Enter the file name first, when finish type done_____!!!")
 
-#input of the file name
+#----------------------------------------------------------input of the file name---------------------------------------
 inp_1=input("Enter file name:\n")
 
-# handle the file
+#------------------------------------------------------------handle the file------------------------------------------
 try:
     fhand = open(inp_1)
+    l_fhand = list(fhand)
 
 except:
     print("Try another file!")
     quit()
 
+#----------------------------------------------------work on counting function------------------------------------------------
 
-#work on counting function
-#file input
-fhand = (open("test.txt"))
-l_fhand = list(fhand)
-
-#loop around the file
+#-----------------------------------------------------loop around the file--------------------------------------------------
 line_count = 0
 word_count = 0
 
@@ -28,6 +25,15 @@ for l in l_fhand:
     for w in l:
         word_count +=1
 
-#output
+#--------------------------------------------------most repeated words feature---------------------------------------------------
+
+
+
+
+
+
+
+
+#-----------------------------------------------------------output-------------------------------------------------------------
 print("Line count:",line_count)
 print("Word count:",word_count)
